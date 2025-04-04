@@ -1,0 +1,110 @@
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto; /* Center the container */
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #0056b3; /* A nice blue */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #333;
+  margin-top: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 95%; /* Slightly less than 100% to account for padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical; /* Allow vertical resize */
+  display: block; /* Take full width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: block; /* Make button take its own line */
+  width: 50%;
+  margin: 10px auto 20px auto; /* Center button */
+  padding: 12px 20px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#results {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #e9ecef; /* Light grey background for results */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  min-height: 50px; /* Ensure it has some height even when empty */
+}
+
+#results p {
+  margin: 5px 0;
+}
+
+#results .label {
+  font-weight: bold;
+  text-transform: capitalize; /* Make labels like 'positive' look nicer */
+  color: #17a2b8; /* Info color */
+}
+#results .score {
+  font-family: monospace; /* Use monospace for scores */
+  background-color: #f8f9fa;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Style for error messages */
+#results .error {
+  color: #dc3545; /* Danger color */
+  font-weight: bold;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.future-goals {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.future-goals ul {
+  list-style: disc;
+  padding-left: 20px;
+}

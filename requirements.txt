@@ -1,0 +1,8 @@
+
+flask
+transformers
+# For CPU-only:
+torch --index-url https://download.pytorch.org/whl/cpu
+numpy
+scipy
+gunicorn # Production WSGI server

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Tweet Sentiment Analysis</h1>
+        <p>Enter text (like a tweet) below to analyze its sentiment.</p>
+
+        <textarea id="textInput" rows="4" placeholder="Enter text here..."></textarea>
+        <button id="analyzeButton">Analyze Sentiment</button>
+
+        <h2>Results:</h2>
+        <div id="results">
+            <p>Results will appear here after analysis.</p>
+        </div>
+
+        <hr> <div class="future-goals">
+             <h2>Future Goals & Improvements</h2>
+             <ul>
+                 <li>Integrate Twitter API to automatically fetch tweets on a specific campaign.</li>
+                 <li>Add support for specific keywords that are doing well or can be improved.</li>
+                 <li>Visualize sentiment scores using charts (e.g., bar chart).</li>
+                 <li>Implement batch analysis for multiple texts at once.</li>
+             </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
